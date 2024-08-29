@@ -8,6 +8,8 @@ const userRoutes = require('./routes/user');
 const app = next({ dir: './client' }); // Point to the client directory
 const handle = app.getRequestHandler();
 
+const port = process.env.PORT || 5000;
+
 app.prepare().then(() => {
     const server = express();
 
@@ -31,8 +33,8 @@ app.prepare().then(() => {
         .then(() => {
             console.log("Connected to database");
 
-            server.listen(process.env.PORT, () => {
-                console.log(`Listening on port http://localhost:${process.env.PORT}`);
+            server.listen(port, () => {
+                console.log(`Listening on port http://localhost:${port}`);
             });
         })
         .catch((error) => {
