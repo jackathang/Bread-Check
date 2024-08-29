@@ -1,0 +1,21 @@
+.delete{color:var(--default-5)}
+.delete:hover,.delete:focus, .delete:active{
+    color: var(--danger-highlight);
+    transition: var(--transition-prop);
+}
+
+/* Set styles */
+.set{
+    background-color: var(--default-2);
+}
+
+.setUnits{
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+    gap: 0.5em;
+}
+
+.set__complete, .set__complete a{
+    color: var(--highlight-3)!important;
+}

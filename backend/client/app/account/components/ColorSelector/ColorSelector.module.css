@@ -1,0 +1,18 @@
+.button{
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    box-shadow: var(--default-box-shadow);
+}
+
+.buttonContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30px, 3fr));
+    gap: 16px;
+}
+
+.selected, .button:hover, .button:focus, .button:active{
+    border: 2px solid var(--button-font-1);
+    transition: var(--transition-prop);
+}

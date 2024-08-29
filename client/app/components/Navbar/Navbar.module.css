@@ -1,0 +1,11 @@
+.navbar{
+    font-weight: 600;
+    display: flex;
+    gap: 1em;
+}
+.navbar a {
+    text-transform: capitalize;
+}
+.navbar span {
+    text-transform: none!important;
+}

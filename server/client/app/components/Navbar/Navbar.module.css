@@ -1,0 +1,17 @@
+.navbar{
+    font-weight: 600;
+    display: flex;
+    gap: 1em;
+    padding-top: .5rem!important; padding-bottom: .5rem!important;
+}
+.navbar a {
+    text-transform: capitalize;
+}
+.navbar span {
+    text-transform: none!important;
+}
+
+.icon{
+    width: 2.75rem;
+    aspect-ratio: 1;
+}
