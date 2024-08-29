@@ -4,6 +4,8 @@ const mongoose = require('mongoose');
 const next = require('next');
 const setRoutes = require('./routes/sets');
 const userRoutes = require('./routes/user');
+const path = require('path');
+console.log("Next.js directory:", path.resolve('./client/.next')); // This should point to the correct location
 
 const app = next({ dir: './client' }); // Point to the client directory
 const handle = app.getRequestHandler();
