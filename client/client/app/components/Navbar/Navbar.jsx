@@ -17,7 +17,7 @@ export default function Navbar() {
       {/* signed out */}
       {!user && (
           <div className = "row full-width justify-between align-center">
-            <Link href="/">Dashboard</Link>
+            <img className = {styles.icon} src={'/Bread-Check-Icon-blue.png'}></img>
             <div className = "row gap-16 align-center">
               <Link href="/login">Login</Link>
               <Link href="/signup">Register</Link> 
@@ -27,7 +27,7 @@ export default function Navbar() {
       {/* signed in */}
       {user && (
         <div className = "row full-width justify-between align-center">
-          <Link href="/">Dashboard</Link>
+          <Link href="/"><img className = {styles.icon} src={`/Bread-Check-Icon-${user.theme.accentColor}.png`}></img></Link>
           <div className = "row gap-16 align-center">
             <Link href = "/account" ><span>{user.username}</span></Link>
             <button className = "cta-button" onClick = {handleLogout}>Logout</button>

@@ -14,7 +14,7 @@ export default function ProtectedRoute({ requireLoggedIn, children }) {
   }, [setLoading]);
 
   useEffect(() => {
-    if (loading) return; 
+    if (loading) return; // Don't run the redirect logic until loading is complete
 
     if (!requireLoggedIn && user) {
       router.push("/");

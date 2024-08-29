@@ -40,6 +40,7 @@ export const useCreateSet = () => {
         if (!response.ok) {
             setCreateIsLoading(false);
             setCreateError(json.error);
+            console.log(json.error)
         }
     }
 

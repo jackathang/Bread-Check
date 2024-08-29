@@ -30,6 +30,7 @@ export const useMatchEmail = () => {
         if (!response.ok) {
             setIsLoading(false);
             setError(json.error);
+            console.log(`Error ${json.error}`)
         }
         if (response.ok) {
             // update authcontext
